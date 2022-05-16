@@ -1,6 +1,6 @@
 /*** Variables ***/
 // API Key
-const API_KEY = 'vRgpxNRNKxyIlc1sk9lEifd6kDJZDK57';
+const API_KEY = '1gTobQpyN1xtQ7ClqLzzYFzYuaXXbCu3';
 // limit
 const limit = 25; 
 // Get `input`
@@ -23,14 +23,16 @@ inputField.addEventListener('keyup', event => {
       console.log(gifs.data);
       
       // Get container for data
-      const videoContainer = document.querySelector('.videos');
+      const videoContainer = document.querySelector('.swiper');
       
       // Loop through the array of data
       gifs.data.forEach( gif => {
         
           // template 
           const template  = `
-            <video src="${gif.images.original.mp4}" autoplay loop></video>
+          <div class="swiper-slide">
+          <video src="${gif.images.original.mp4}"></video>
+        </div>
           `;
         
           // append
