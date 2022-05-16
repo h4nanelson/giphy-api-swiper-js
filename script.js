@@ -6,7 +6,7 @@ const limit = 25;
 // Get `input`
 const inputField = document.querySelector('.search-input');
 // Initialize or Default search query
-inputField.value = '';
+inputField.value = 'eagles ';
 
 // Listen to key presses
 inputField.addEventListener('keyup', event => {
