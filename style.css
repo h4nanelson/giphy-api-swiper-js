@@ -20,11 +20,11 @@ input {
 }
 
 .swiper {
-  background: red;
+  background: rgb(255, 160, 225);
 }
 
 .swiper-wrapper {
-  background: green;
+  background: rgb(162, 190, 224);
   
 /*   height: 300px; */
 }
